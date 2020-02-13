@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+<!--    <icon> Remember to add-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Simple Calculator</title>
 </head>
 <body>
     <div class="calculatorBody">
-        <button type="button" class="btn-primary">0</button>
-        <button type="button" class="btn-primary">1</button>
-        <button type="button" class="btn-primary">2</button>
-        <button type="button" class="btn-primary">3</button>
-        <button type="button" class="btn-primary">4</button>
-        <button type="button" class="btn-primary">5</button>
-        <button type="button" class="btn-primary">6</button>
-        <button type="button" class="btn-primary">7</button>
-        <button type="button" class="btn-primary">8</button>
-        <button type="button" class="btn-primary">9</button>
+
+        <div class="displayBar"></div>
+
+        <div class="calculatorBtn">
+
+            <!--            first row-->
+            <button type="button" class="btn-ope">(</button>
+            <button type="button" class="btn-ope">)</button>
+            <button type="button" class="btn-res" id="clear">CE</button>
+            <button type="button" class="btn-res" id="allClear">AC</button>
+
+            <!--            second row-->
+            <button type="button" class="btn-num">7</button>
+            <button type="button" class="btn-num">8</button>
+            <button type="button" class="btn-num">9</button>
+            <button type="button" class="btn-ope">+</button>
+
+            <!--            third row-->
+            <button type="button" class="btn-num">4</button>
+            <button type="button" class="btn-num">5</button>
+            <button type="button" class="btn-num">6</button>
+            <button type="button" class="btn-ope">-</button>
+
+            <!--            fourth row-->
+            <button type="button" class="btn-num">1</button>
+            <button type="button" class="btn-num">2</button>
+            <button type="button" class="btn-num">3</button>
+            <button type="button" class="btn-opesp" id="multiply" value="*">&times;</button>
+
+            <!--            fifth row-->
+            <button type="button" class="btn-num">0</button>
+            <button type="button" class="btn-dec" id="decimal">.</button>
+            <button type="button" class="btn-res" id="percentage">%</button>
+            <button type="button" class="btn-opesp" id="divide" value="/">&divide;</button>
+
+            <!--            sixth row-->
+            <button type="button" class="btn-pre" id="ans">Ans</button>
+            <button type="button" class="btn-res" id="equal">=</button>
+        </div>
+
     </div>
 </body>
+<script>
+
+</script>
 </html>
